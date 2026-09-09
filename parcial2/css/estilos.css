@@ -1,0 +1,272 @@
+#contenedor {
+	width: 100%;
+	max-width: 1360px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../img/fondo.png);
+	background-attachment: fixed;
+	line-height: 1.2;
+}
+
+p, li {
+	font-family: "Roboto Mono", monospace;
+	font-size: 0.8rem;
+}
+
+header {
+	width: 90%;
+	border: 3px solid steelblue;
+	margin: auto; 
+	padding: 0;
+	text-align: center;
+	background-color: rgb(225, 225, 225, 0.9);
+}
+
+h1, h2, h3  {
+	font-family: "Arvo", serif;
+}
+
+h1 span {
+	font-size: 3rem;
+}
+
+header p em {
+	padding: 3px;
+	background-color: steelblue;
+	color: white;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+	background-color: rgb(255, 255, 255, 0.6);
+}
+
+nav li {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+}
+
+nav li a {
+	margin: 10px;
+	padding: 10px;
+}
+
+nav li a:link {
+	color: black;
+	border: 3px solid steelblue;
+}
+
+nav li a:visited {
+	color: #256d85;
+	border: 3px solid #256d85;
+}
+
+nav li a:hover {
+	color: steelblue;
+	border: 3px solid steelblue;
+}
+
+nav li a:active {
+	color: steelblue;
+	border: 3px solid steelblue;
+}
+/* PARA ACOMODAR ESTA SECCIÓN CON LA ESTRUCTURA QUE QUERÍA, UTILICÉ AYDUA DE LA IA*/
+/*--------------------------------------------------------------------*/
+#art1 {
+	display: inline-block;
+	width: 50%;
+	border: 3px solid #4a8160;
+	padding: 31px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	background-color: rgb(255, 255, 255, 0.9);
+	vertical-align: top;
+}
+
+#img1 {
+	display: inline-block;
+	width: 49%;
+	border: 3px solid #4a8160;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	vertical-align: top;
+}
+
+#art1 h2 span {
+	background-color: #4a8160;
+}
+
+.uno span {
+	background-color: rgb(129, 182, 150, 0.9);
+	font-weight: bold;
+}
+/*--------------------------------------------------------------------*/
+
+#art2 {
+	display: inline-block;
+	width: 50%;
+	border: 3px solid rgb(60, 60, 60, 1);
+	padding: 31px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	background-color: rgb(255, 255, 255, 0.9);
+	vertical-align: top;
+}
+
+#img2 {
+	display: inline-block;
+	width: 49%;
+	border: 3px solid rgb(60, 60, 60, 1);
+	margin-top: 10px;
+	margin-bottom: 20px;
+	vertical-align: top;
+}
+
+#art2 h2 span {
+	background-color: dimgrey;
+}
+
+.dos span {
+	background-color: gray;
+	font-weight: bold;
+}
+
+#div3, #div4 {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 20px;
+}
+
+#art3 {
+	text-align: center;
+	display: inline-block;
+	width: 50%;
+	border: 3px solid steelblue; 
+	padding: 10px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	background-color: rgb(225, 225, 225, 0.9);
+}
+
+#art3 h2, #art3 h3 {
+	text-align: center;
+}
+
+#indian span {
+	background-color: indianred;
+}
+
+#yellow span {
+	background-color: #e3b958;
+}
+
+#img3, #img4 {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 60px;
+
+}
+
+#img3 {
+	border: 3px solid indianred;
+}
+
+#img4 {
+	border: 3px solid #e3b958;
+}
+
+/* PARA ACOMODAR ESTA SECCIÓN CON LA ESTRUCTURA QUE QUERÍA, UTILICÉ AYDUA DE LA IA*/
+/*--------------------------------------------------------------------*/
+
+#art4 {
+	vertical-align: top;
+	width: 55%;
+	border: 3px solid steelblue; 
+	padding: 10px;
+	margin-top: 60px;
+	margin-bottom: 20px;
+	background-color: rgb(225, 225, 225, 0.9);
+}
+
+#art4 h2 {
+	text-align: center;
+}
+
+#art4 h2 span {
+	background-color: steelblue;
+}
+
+#art4 iframe {
+	display: block;
+	margin: auto;
+	border: 3px solid steelblue;
+}
+
+#sec1 {
+	display: inline-block;
+	width: 50%;
+	border: 3px solid steelblue; 
+	padding: 10px;
+	margin-top: 110px;
+	margin-bottom: 40px;
+	background-color: rgb(225, 225, 225, 0.9);
+}
+
+#sec1 h3 span {
+	background-color: steelblue;
+}
+
+#sec1 li::marker {
+	color: steelblue;
+}
+
+#div1 {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 30px;
+}
+
+#art5 {
+	border: 3px solid steelblue;
+	padding: 10px;
+	margin-bottom: 40px;
+	background-color: rgb(225, 225, 225, 0.9);
+}
+
+#art5 h2 span {
+	background-color: steelblue;
+}
+/*-------------------------------------------------------------------*/					
+
+footer {
+	border: 3px solid steelblue;
+	background-color: whitesmoke;
+	text-align: center;
+	margin-top: 20px;
+}
+
+footer p {
+	font-size: 1.3rem;
+}
+
+footer a {
+	color: #06283d;
+	background-color: #49b7fc;
+}
+
