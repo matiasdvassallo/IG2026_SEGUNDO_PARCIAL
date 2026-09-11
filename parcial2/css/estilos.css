@@ -1,33 +1,20 @@
 #contenedor {
 	width: 100%;
-	max-width: 1360px;
+	max-width: 1920px;
 }
 
 * {
 	box-sizing: border-box;
 }
 
+/*BODY*/
 body {
 	background-image: url(../img/fondo.png);
 	background-attachment: fixed;
 	line-height: 1.2;
 }
 
-p, li {
-	font-family: "Roboto Mono", monospace;
-	font-size: 0.8rem;
-}
-
-header {
-	width: 90%;
-	border: 3px solid steelblue;
-	margin: auto; 
-	padding: 0;
-	text-align: center;
-	background-color: rgb(225, 225, 225, 0.9);
-}
-
-h1, h2, h3  {
+h1, h2, h3 {
 	font-family: "Arvo", serif;
 }
 
@@ -35,10 +22,27 @@ h1 span {
 	font-size: 3rem;
 }
 
+p, li {
+	font-family: "Roboto Mono", monospace;
+	font-size: 0.8rem;
+}
+/*BODY*/
+
+/*HEADER*/
+header {
+	width: 70%;
+	border: 3px solid steelblue;
+	margin: auto; 
+	padding: 0;
+	text-align: center;
+	background-color: rgb(225, 225, 225, 0.9);
+}
+
 header p em {
 	padding: 3px;
 	background-color: steelblue;
 	color: white;
+    text-align: center;
 }
 
 nav ul {
@@ -52,13 +56,13 @@ nav a {
 
 nav li {
 	display: inline-block;
-	margin: 10px;
-	padding: 10px;
+	margin: 1rem;
+	padding: 0.8rem;
 }
 
 nav li a {
-	margin: 10px;
-	padding: 10px;
+	margin: 0.8rem;
+	padding: 0.8rem;
 }
 
 nav li a:link {
@@ -80,180 +84,185 @@ nav li a:active {
 	color: steelblue;
 	border: 3px solid steelblue;
 }
-/* PARA ACOMODAR ESTA SECCIÓN CON LA ESTRUCTURA QUE QUERÍA, UTILICÉ AYDUA DE LA IA*/
-/*--------------------------------------------------------------------*/
-#art1 {
-	display: inline-block;
-	width: 50%;
-	border: 3px solid #4a8160;
-	padding: 31px;
-	margin-top: 60px;
-	margin-bottom: 20px;
-	background-color: rgb(255, 255, 255, 0.9);
-	vertical-align: top;
+/*HEADER*/
+
+/*MAIN*/
+
+/*INDEX*/
+.columnas {
+    display: flex;
+}
+
+.columna {
+    width: 32%;
+    margin: 0 0.66%;
+    margin-top: 1rem;
+}
+
+.columna img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 #img1 {
-	display: inline-block;
-	width: 49%;
-	border: 3px solid #4a8160;
-	margin-top: 60px;
-	margin-bottom: 20px;
-	vertical-align: top;
-}
-
-#art1 h2 span {
-	background-color: #4a8160;
-}
-
-.uno span {
-	background-color: rgb(129, 182, 150, 0.9);
-	font-weight: bold;
-}
-/*--------------------------------------------------------------------*/
-
-#art2 {
-	display: inline-block;
-	width: 50%;
-	border: 3px solid rgb(60, 60, 60, 1);
-	padding: 31px;
-	margin-top: 10px;
-	margin-bottom: 20px;
-	background-color: rgb(255, 255, 255, 0.9);
-	vertical-align: top;
+    border: 3px solid #4a8160;
 }
 
 #img2 {
-	display: inline-block;
-	width: 49%;
-	border: 3px solid rgb(60, 60, 60, 1);
-	margin-top: 10px;
-	margin-bottom: 20px;
-	vertical-align: top;
-}
-
-#art2 h2 span {
-	background-color: dimgrey;
-}
-
-.dos span {
-	background-color: gray;
-	font-weight: bold;
-}
-
-#div3, #div4 {
-	width: 90%;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	gap: 20px;
-}
-
-#art3 {
-	text-align: center;
-	display: inline-block;
-	width: 50%;
-	border: 3px solid steelblue; 
-	padding: 10px;
-	margin-top: 60px;
-	margin-bottom: 60px;
-	background-color: rgb(225, 225, 225, 0.9);
-}
-
-#art3 h2, #art3 h3 {
-	text-align: center;
-}
-
-#indian span {
-	background-color: indianred;
-}
-
-#yellow span {
-	background-color: #e3b958;
-}
-
-#img3, #img4 {
-	display: inline-block;
-	vertical-align: top;
-	margin-top: 60px;
-
+    border: 3px solid indianred;
 }
 
 #img3 {
-	border: 3px solid indianred;
+    border: 3px solid #e3b958;
 }
 
-#img4 {
-	border: 3px solid #e3b958;
+section {
+    background-color: rgb(255, 255, 255, 0.9);
+    border: 3px solid steelblue;
+    padding: 1rem;
+    margin-bottom: 1rem;
+	text-align: justify;
 }
 
-/* PARA ACOMODAR ESTA SECCIÓN CON LA ESTRUCTURA QUE QUERÍA, UTILICÉ AYDUA DE LA IA*/
-/*--------------------------------------------------------------------*/
+/*#art1 p, #art2 p, #art3 p {
+	text-align: justify;
+}*/
 
-#art4 {
-	vertical-align: top;
-	width: 55%;
-	border: 3px solid steelblue; 
-	padding: 10px;
-	margin-top: 60px;
-	margin-bottom: 20px;
-	background-color: rgb(225, 225, 225, 0.9);
+#art1 h2 span, #art1 p span {
+	background-color: #4a8160;
+    font-weight: bold;
 }
 
-#art4 h2 {
+#art2 h2 span, #art2 p span {
+    background-color: indianred;
+    font-weight: bold;
+}
+
+#art3 h2 span, #art3 p span {
+    background-color: #e3b958;
+    font-weight: bold;
+}
+
+#curioso {
 	text-align: center;
+	font-weight: bold;
+}
+#curioso h2 span, #curioso p span {
+	color: #06283d;
+	background-color: #49b7fc;
 }
 
-#art4 h2 span {
-	background-color: steelblue;
+.dato, .boton-dato {
+	text-align: center;
+	font-weight: bold;
 }
-
-#art4 iframe {
-	display: block;
-	margin: auto;
-	border: 3px solid steelblue;
-}
-
-#sec1 {
-	display: inline-block;
-	width: 50%;
-	border: 3px solid steelblue; 
+.boton-dato span {
 	padding: 10px;
-	margin-top: 110px;
-	margin-bottom: 40px;
-	background-color: rgb(225, 225, 225, 0.9);
-}
-
-#sec1 h3 span {
-	background-color: steelblue;
-}
-
-#sec1 li::marker {
-	color: steelblue;
-}
-
-#div1 {
-	width: 90%;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	gap: 30px;
-}
-
-#art5 {
 	border: 3px solid steelblue;
-	padding: 10px;
-	margin-bottom: 40px;
-	background-color: rgb(225, 225, 225, 0.9);
+	text-decoration: underline;
+	text-decoration-color: solid steelblue;
 }
 
-#art5 h2 span {
-	background-color: steelblue;
+.dato {
+	padding-top: 10px;
 }
-/*-------------------------------------------------------------------*/					
+/*INDEX*/
 
+/*GALERIA*/
+
+.columna-grande {
+    width: 58%;
+    margin: 1%;
+	text-align:center;
+}
+
+.columna-chica {
+    width: 38%;
+    margin: 1%;
+}
+
+#art4 h2 span, #art5 h2 span, #art6 h2 span {
+	color: #06283d;
+	background-color: #49b7fc;
+	font-weight: bold;
+}
+
+#art5 li::marker {
+	color: #49b7fc;
+}
+
+#art5 li {
+	font-size: 1.2rem;
+}
+
+/*Para construir efectivamente esta parte utilicé ayuda de IA*/
+#galeria1 {
+    display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.info-obra {
+    width: 50%;
+}
+
+.info-obra h2 {
+	font-size: 2rem;
+	margin-bottom: 10px;
+}
+
+.info-obra p {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+
+#boton-obra span {
+	font-weight: bold;
+	background-color: #49b7fc;
+	padding: 5px;
+	border: 3px solid steelblue;
+	text-decoration: underline;
+	text-decoration-color: solid steelblue;
+}
+
+#boton-tema span {
+	font-size: 1rem;
+	font-weight: bold;
+	background-color: #49b7fc;
+	padding: 5px;
+	border: 3px solid steelblue;
+	text-decoration: underline;
+	text-decoration-color: solid steelblue;
+}
+
+.info-obra h3 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+#año {
+	padding-bottom: 10px;
+}
+
+#color {
+	font-size: 0.8rem;
+	color: gray;
+	padding-top: 10px;
+}
+#img4 {
+    width: 50%;
+    height: auto;
+	margin-top: 20px;
+	margin-right: 50px;
+	border: 3px solid #49b7fc;
+}
+/*-----------------------------------------------------------*/
+/*GALERIA*/
+
+/*MAIN*/
+
+/*FOOTER*/
 footer {
 	border: 3px solid steelblue;
 	background-color: whitesmoke;
@@ -262,11 +271,11 @@ footer {
 }
 
 footer p {
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 }
 
 footer a {
 	color: #06283d;
 	background-color: #49b7fc;
 }
-
+/*FOOTER*/
