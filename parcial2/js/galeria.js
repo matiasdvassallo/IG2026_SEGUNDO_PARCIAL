@@ -48,6 +48,12 @@ botonobra.addEventListener('click', () => {
     }
 });
 
+// En esta primer parte primero declaré las variables que capturan los elementos necesarios para generar la galería interactiva.
+// A su vez, declaro una variable 'posición' con valor 1, ya que el contenido del objeto 0 del array ya se muestra en la página.
+// Luego, declaré un array de objetos con los datos necesarios para efectuar el cambio de imagen y adaptar el contenido de los elementos a los de la obra actual.
+// Luego, le asigné un evento a partir de un click en '#boton-obra span', que efectua el cambio de datos de los elementos capturados a los del objeto actual, segun el valor de 'posicion'. 
+// Finalmente, declaré un if que determina que si el valor de posición es mayor o igual al del length de obras, cambia el valor de posición a 0 para volver a mostrar la primer obra.
+
 let tema = document.querySelector('.columna-grande')
 let botonTema = document.querySelector("#boton-tema span");
 let titulo1 = document.querySelectorAll('#art6 h2 span');
@@ -107,7 +113,7 @@ botonTema.addEventListener('click', () => {
             parrafos[i].style.color = '';
         }
 
-        color.innerText = '(Cambiá el tema de esta sección de oscuro a claro)';
+        color.innerText = '(Cambiá el tema de esta sección de claro a oscuro)';
         color.style.color = '';
 
         botonTema.innerText = 'TEMA OSCURO';
@@ -126,3 +132,9 @@ botonTema.addEventListener('click', () => {
     }
 
 });
+
+// En esta parte del código, capturé en variables elementos del código necesarios para efectuar un cambio de tema (Anteriormente ya había capturado algunos que iba a utilizar, por eso no fueron capturados nuevamente).
+// A su vez, declaré una variable 'oscuro' con valor false
+// Luego, declaro un evento que provoca que con un click se cambien los estilos elegidos de los elementos capturados, en algunos, su contenido de texto.
+// Este cambio parte de un if else. Si el valor de 'oscuro' es estrictamente igual a false. Los colores y (en algunos casos) el contenido de los elementos capturados se cambian a los elegido para el tema oscuro. Luego, el valor de oscuro se cambia a true.
+// Luego de esto, si se vuelve a hacer click sobre '#boton-tema span' los colores y textos vuelven a la normalidad, ya que el valor de 'oscuro' ya no es false, sino true (es decir, el tema está 'oscuro' y volvería a claro). Finalmente, el valor de 'oscuro' vuelva a ser false.

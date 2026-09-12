@@ -257,7 +257,95 @@ section {
 	margin-right: 50px;
 	border: 3px solid #49b7fc;
 }
+/*------------------------------------------------------------*/
 /*-----------------------------------------------------GALERIA*/
+
+/*------------------------------------------EJERCICIO*/
+
+form{
+	font-family: "Roboto Mono", monospace;
+	font-size: 0.8rem;
+
+}
+
+button {
+	font-family: "Roboto Mono", monospace;
+	font-weight: bold;
+}
+
+#formularios h2 span {
+	background-color: #49b7fc;
+	color: #06283d;
+}
+
+#formularios section {
+	width: 70%;
+	justify-self: center;
+}
+
+#formularios input {
+	margin-top: 10px;
+}
+
+#form-sec-1 {
+	margin-top: 20px;
+}
+
+#form-sec-1, #form-sec-2, #form-sec-3 {
+	text-align: center;
+}
+
+#formularios button {
+	margin-top: 20px;
+}
+
+button {
+	background-color: #49b7fc;
+	border: 2px solid steelblue;
+}
+
+#boton-reset {
+	display: flex;
+	justify-content: center;
+
+}
+#reiniciar {
+	font-size: 1.8rem;
+	border: 2px solid #49b7fc;
+	color: #49b7fc;
+	background-color: #06283d;
+}
+
+#resultado1, #resultado2, #resultado3 {
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+#info {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#info ol {
+    text-align: center;
+    list-style-position: inside;
+}
+
+#info li::marker {
+	color: #49b7fc;
+}
+
+#info p, #info li {
+	font-weight: bold;
+}
+
+#info p span {
+	background-color: #49b7fc;
+	color: #06283d;
+}
+
+/*------------------------------------------EJERCICIO*/
+
 
 /*------------------------------------------FOOTER*/
 footer {

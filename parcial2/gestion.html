@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Instalaciones</title>
+    <link href="css/estilos.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="contenedor">
+	<header>
+		<h1><span>Casey Reas</span>
+			<br>
+			Código, Sistemas y Arte generativo contemporáneo</h1>
+		<p><em>"Una obra puede ser definida y ejecutada en multiples formas." — Casey Reas</em></p>
+		<nav>
+			<ul>
+				<li><a href="index.html" target="_self">Casey Reas</a></li>
+				<li><a href="galeria.html" target="_self">Galería de Arte</a></li>
+				<li><a href="gestion.html" target="_self">Gestión de Instalaciones</a></li>
+			</ul>	
+		</nav>
+	</header>
+    <main>
+        <div id="formularios">
+        <section id="info">
+            <article id="info">
+            <p><span>¿Querés simular cómo sería la gestión de una producción artística de Casey Reas? ¡Completá el siguiente formulario para averiguarlo!</span></p>
+            <p>En el primer formulario completá la cantdiad de instalaciones, las horas de trabajo y el monto de honorarios pretendido.</p>
+            <p>En el segundo formulario vas a elegir el nombre de las instalaciones, la cantidad de personas necesarias y los días estimnados de producción <span>(OJO: COMPLETÁ CON LA CANTIDAD DE INSTALACIONES QUE ELEGISTE)</span></p>
+            <p><span>Finalmente al apretar calcular datos vas a poder visualizar</span></p>
+            <ol>
+                <li>El costo total de un día de trabajo considerando el total de las personas que trabajan en el estudio</li>
+                <li>La instalación cuya producción es la que necesita más días de producción y su costo total</li>
+                <li>Qué porcentaje del costo total del estudio (considerando que se completa la producción de todas las instalaciones) representa el costo de la instalación de más días de producción</li>
+            </ol>
+            <p><span>Una vez realizada la simulación, apretá "REINICIAR" para refrescar los datos.</span></p>
+            </article>
+        </section>
+        <section id="form-sec-1">
+            <h2><span>Gestión de instalaciones</span></h2>
+
+                <form id="form-general">
+
+                    <label for="cantidad">Cantidad de instalaciones:</label>
+                    <input type="number" id="cantidad" name="cantidad">
+
+                    <br>
+
+                    <label for="horas">Horas de trabajo por día:</label>
+                    <input type="number" id="horas" name="horas">
+
+                    <br>
+
+                    <label for="honorario">Monto de honorarios por hora:</label>
+                    <input type="number" id="honorario" name="honorario">
+
+                    <br>
+
+                    <button type="submit" id="confirmar">Confirmar datos</button>
+
+                </form>
+
+        </section>
+
+        <section id="form-sec-2">
+
+            <h2><span>Carga de instalaciones</span></h2>
+
+                <form id="form-instalacion">
+
+                    <label for="nombre">Nombre de la instalación:</label>
+                    <input type="text" id="nombre" name="nombre" disabled>
+
+                    <br>
+
+                    <label for="personas">Cantidad de personas necesarias:</label>
+                    <input type="number" id="personas" name="personas" disabled>
+
+                    <br>
+
+                    <label for="dias">Días estimados de producción:</label>
+                    <input type="number" id="dias" name="dias" disabled>
+
+                    <br>
+
+                    <button type="submit" id="agregar" disabled>Confirmar datos</button>
+
+                </form>
+
+        </section>
+
+        <section id="form-sec-3">
+
+            <h2><span>Resultados</span></h2>
+
+                <button type="button" id="calcular" disabled>Calcular resultados</button>
+
+                <p id="resultado1"></p>
+                <p id="resultado2"></p>
+                <p id="resultado3"></p>
+
+        </section>
+            <div id="boton-reset">
+                <button type="button" id="reiniciar" disabled>Reiniciar</button>
+            </div>
+        </div>
+    </main>
+    	<footer>
+		<p>Para contactarse escribir a <a href="mailto:casey@artedigital.com">casey@artedigital.com</a></p>
+	    </footer>	
+    </div>
+<script src="js/gestion.js"></script>
+</body>
+</html>
