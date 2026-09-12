@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 }
 
-/*BODY*/
+/*----------------------------------------------BODY*/
 body {
 	background-image: url(../img/fondo.png);
 	background-attachment: fixed;
@@ -26,9 +26,9 @@ p, li {
 	font-family: "Roboto Mono", monospace;
 	font-size: 0.8rem;
 }
-/*BODY*/
+/*----------------------------------------------BODY*/
 
-/*HEADER*/
+/*----------------------------------------------HEADER*/
 header {
 	width: 70%;
 	border: 3px solid steelblue;
@@ -84,11 +84,9 @@ nav li a:active {
 	color: steelblue;
 	border: 3px solid steelblue;
 }
-/*HEADER*/
+/*--------------------------------------------HEADER*/
 
-/*MAIN*/
-
-/*INDEX*/
+/*--------------------------------------------INDEX*/
 .columnas {
     display: flex;
 }
@@ -110,10 +108,12 @@ nav li a:active {
 }
 
 #img2 {
+	margin-top: 25px;
     border: 3px solid indianred;
 }
 
 #img3 {
+	margin-bottom: 25px;
     border: 3px solid #e3b958;
 }
 
@@ -124,10 +124,6 @@ section {
     margin-bottom: 1rem;
 	text-align: justify;
 }
-
-/*#art1 p, #art2 p, #art3 p {
-	text-align: justify;
-}*/
 
 #art1 h2 span, #art1 p span {
 	background-color: #4a8160;
@@ -153,24 +149,28 @@ section {
 	background-color: #49b7fc;
 }
 
-.dato, .boton-dato {
+#dato, #boton-dato {
 	text-align: center;
 	font-weight: bold;
 }
-.boton-dato span {
+
+#boton-dato {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+#boton-dato span {
 	padding: 10px;
 	border: 3px solid steelblue;
 	text-decoration: underline;
 	text-decoration-color: solid steelblue;
 }
 
-.dato {
+#dato {
 	padding-top: 10px;
 }
-/*INDEX*/
+/*--------------------------------------INDEX*/
 
-/*GALERIA*/
-
+/*G-----------------------------------GALERIA*/
 .columna-grande {
     width: 58%;
     margin: 1%;
@@ -196,7 +196,7 @@ section {
 	font-size: 1.2rem;
 }
 
-/*Para construir efectivamente esta parte utilicé ayuda de IA*/
+/*PARA CONSTRUIR EFECTIVAMENTE ESTA PARTE DEL CÓDIGO CSS UTILICÉ IA*/
 #galeria1 {
     display: flex;
 	justify-content: center;
@@ -257,12 +257,9 @@ section {
 	margin-right: 50px;
 	border: 3px solid #49b7fc;
 }
-/*-----------------------------------------------------------*/
-/*GALERIA*/
+/*-----------------------------------------------------GALERIA*/
 
-/*MAIN*/
-
-/*FOOTER*/
+/*------------------------------------------FOOTER*/
 footer {
 	border: 3px solid steelblue;
 	background-color: whitesmoke;
@@ -278,4 +275,4 @@ footer a {
 	color: #06283d;
 	background-color: #49b7fc;
 }
-/*FOOTER*/
+/*------------------------------------------FOOTER*/
